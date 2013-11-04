@@ -5,10 +5,10 @@ xmlns:xsd="http://www.w3.org/2001/XMLSchema"
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 
 IsInEstimationMode="true"
-EstimationModel="AutoOwnershipModel"
+EstimationModel="TripTimeModel"
 ShouldOutputAlogitData="true"
-OutputAlogitDataPath="AutoOwnershipModel_psrcper1.dat"
-OutputAlogitControlPath="AutoOwnershipModel_psrcper1.alo"
+OutputAlogitDataPath="TripTimeModel_psrcper1.dat"
+OutputAlogitControlPath="TripTimeModel_psrcper1.alo"
 
 
 ShouldRunInputTester="true"
@@ -108,9 +108,9 @@ RawPersonDelimiter="32"
 OutputPersonPath="_person.tsv"
 OutputPersonDelimiter="9"
 
-OImportPersonDays="true"
-RawPersonDayPath="pdayx7.dat"
-RawPersonDayDelimiter="32"
+ImportPersonDays="true"
+RawPersonDayPath="pday7Purposes.dat"
+RawPersonDayDelimiter="9"
 OutputPersonDayPath="_person_day.tsv"
 OutputPersonDayDelimiter="9"
 
@@ -121,14 +121,14 @@ OutputHouseholdDayPath="_household_day.tsv"
 OutputHouseholdDayDelimiter="9"
 
 ImportTours="true"
-RawTourPath="tourx7.dat"
-RawTourDelimiter="32"
+RawTourPath="tour7Purposes.dat"
+RawTourDelimiter="9"
 OutputTourPath="_tour.tsv"
 OutputTourDelimiter="9"
 
 ImportTrips="true"
-RawTripPath="tripx7.dat"
-RawTripDelimiter="32"
+RawTripPath="trip7Purposes.dat"
+RawTripDelimiter="9"
 OutputTripPath="_trip.tsv"
 OutputTripDelimiter="9"
 
@@ -232,7 +232,7 @@ PayToParkAtWorkplaceModelCoefficients="coefficients/PayToParkAtWorkplaceModel_ps
 ShouldRunPayToParkAtWorkplaceModel="true"
 IncludePayToParkAtWorkplaceModel="true"
 
-TransitPassOwnershipModelCoefficients="coefficients/TransitPassOwnershipModel_psrcper1.f12"
+TransitPassOwnershipModelCoefficients="coefficients/HTransitPassOwnershipModel_psrcper1.f12"
 ShouldRunTransitPassOwnershipModel="true"
 IncludeTransitPassOwnershipModel="true"
 
@@ -265,7 +265,7 @@ ShouldRunSchoolTourModeModel="true"
 WorkBasedSubtourModeModelCoefficients="coefficients/WorkBasedSubtourModeModel_psrcper1.F12"
 ShouldRunWorkBasedSubtourModeModel="true"
 
-EscortTourModeModelCoefficients="coefficients/EscortTourModeModel_psrcper1.L12"
+EscortTourModeModelCoefficients="coefficients/EscortTourModeModel_psrcper1.F12"
 ShouldRunEscortTourModeModel="true"
 
 OtherHomeBasedTourModeModelCoefficients="coefficients/OtherHomeBasedTourModeModel_psrcper1.F12"
