@@ -40,20 +40,16 @@ def copy_daysim_code():
     if not os.path.exists(os.path.join(os.getcwd(), 'daysim')):
        os.makedirs(os.path.join(os.getcwd(), 'daysim'))
     shcopy(daysim_code +'/Daysim.exe', 'daysim')
-    shcopy(daysim_code +'/Daysim.Attributes.dll', 'daysim')
     shcopy(daysim_code +'/Daysim.Framework.dll', 'daysim')
-    shcopy(daysim_code +'/Daysim.Interfaces.dll', 'daysim')
+    shcopy(daysim_code +'/Daysim.Controller.exe', 'daysim')
     shcopy(daysim_code +'/HDF5DotNet.dll', 'daysim')
     shcopy(daysim_code +'/NDesk.Options.dll', 'daysim')
     shcopy(daysim_code +'/Ninject.dll', 'daysim')
     shcopy(daysim_code +'/Ninject.xml', 'daysim')
-    shcopy(daysim_code +'/msvcr100.dll', 'daysim')
     shcopy(daysim_code +'/szip.dll', 'daysim')
     shcopy(daysim_code +'/zlib.dll', 'daysim')
     shcopy(daysim_code +'/hdf5_hldll.dll', 'daysim')
     shcopy(daysim_code +'/hdf5dll.dll', 'daysim')
-    shcopy(daysim_code +'/Ionic.Zip.dll', 'daysim')
-    shcopy(daysim_code +'/msvcp100.dll', 'daysim')
     shcopy(daysim_code +'/svn_stamp_out.txt', 'daysim')
 
 @timed
