@@ -41,7 +41,7 @@ def copy_daysim_code():
        os.makedirs(os.path.join(os.getcwd(), 'daysim'))
     shcopy(daysim_code +'/Daysim.exe', 'daysim')
     shcopy(daysim_code +'/Daysim.Framework.dll', 'daysim')
-    shcopy(daysim_code +'/Daysim.Controller.exe', 'daysim')
+    shcopy(daysim_code +'/DaysimController.exe', 'daysim')
     shcopy(daysim_code +'/HDF5DotNet.dll', 'daysim')
     shcopy(daysim_code +'/NDesk.Options.dll', 'daysim')
     shcopy(daysim_code +'/Ninject.dll', 'daysim')
